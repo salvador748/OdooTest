@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="lib.qps_iuv_wizard_form">
+            <field name="name">Lib Wizard Form</field>
+            <field name="model">lib.wizard</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header name="header">
+
+                    </header>
+                    <group name="body">
+                        <field name="tipo_reporte"/>
+                        <group>
+                            <field name="fecha_inicio"/>
+                        </group>
+                        <group>
+                            <field name="fecha_fin"/>
+                        </group>
+                        <!-- <field name="codigo"/> -->
+                    </group>
+                    <footer name="footer">
+                        <button name="exportar_csv" string="Exportar CSV" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
